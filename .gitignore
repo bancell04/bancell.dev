@@ -1,0 +1,69 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Virtual environment
+venv/
+ENV/
+env/
+venv.bak/
+venv_*/
+
+# Pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask
+instance/
+*.pyc
+*.pyo
+*.pyd
+
+# Static files
+static/
