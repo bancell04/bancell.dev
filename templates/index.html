@@ -2,7 +2,7 @@
 
 
 {% block title %}
-Brady Ancell - Portfolio
+brady ancell
 {% endblock %}
 
 {% block content %}
@@ -25,10 +25,15 @@ Brady Ancell - Portfolio
     <br><br>
     <div class="links">
         <a href="/">home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/work">work</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="/projects">projects</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://www.linkedin.com/in/brady-ancell/" target="_blank">linkedin</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://github.com/bancell04" target="_blank">github</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/blog">blog</a>
+        <a href="/blog">blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a id="no-underline" href="https://www.linkedin.com/in/brady-ancell/" target="_blank">
+            <img src="{{ url_for('static', filename='linkedin-logo.png')}}" alt="linkedin logo">
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a id="no-underline" href="https://github.com/bancell04" target="_blank">
+            <img src="{{ url_for('static', filename='github-logo.png')}}" alt="github logo">
+        </a>
     </div>
 </div>
 <div class="headshot">

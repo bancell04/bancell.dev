@@ -14,5 +14,9 @@ def projects():
 def blog():
     return render_template('blog.html')
 
+@app.route('/work')
+def work():
+    return render_template('work.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
