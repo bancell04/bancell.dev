@@ -64,6 +64,3 @@ instance/
 *.pyc
 *.pyo
 *.pyd
-
-# Static files
-static/
