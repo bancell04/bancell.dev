@@ -13,3 +13,8 @@ function toggleCursor() {
 }
 
 toggleCursor();
+
+
+function mobileHeadshot() {
+    
+}
