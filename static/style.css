@@ -8,7 +8,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
+    min-height: 100vh;
     overflow: auto; /* Allow scrolling if content overflows */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -88,7 +92,7 @@ body {
         width: 115%;
         height: 115%;
         object-fit: cover; 
-        object-position: -260px -100px; 
+        object-position: 40% 50%;
     }
 
     .mobile-headshot {
