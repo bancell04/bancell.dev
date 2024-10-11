@@ -90,9 +90,9 @@ body {
 
     .headshot img {
         width: 115%;
-        height: 115%;
+        height: 130%;
         object-fit: cover; 
-        object-position: 40% 50%;
+        object-position: 40% -100px;
     }
 
     .mobile-headshot {
