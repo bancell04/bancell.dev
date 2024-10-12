@@ -79,7 +79,7 @@ body {
     }
 
     .links > a:hover {
-        transform:scale(1.5);
+        font-size: 15px;
     }
     
     .headshot {
