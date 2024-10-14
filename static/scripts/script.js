@@ -15,6 +15,8 @@ function toggleCursor() {
 toggleCursor();
 
 
-function mobileHeadshot() {
-    
-}
+// function mobileHeadshot() {
+//     if (window.)
+// }
+
+// mobileHeadshot() 

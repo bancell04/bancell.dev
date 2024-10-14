@@ -24,6 +24,8 @@ body {
     /* No fixed height here to allow scrolling */
 }
 
+
+/* DESKTOP */
 @media (min-width: 601px) {
     .content {
         width: 100%;
@@ -277,6 +279,7 @@ body {
 
     .landing {
         background-color: white;
+        padding: 10px;
     }
 
     .text {
@@ -339,6 +342,14 @@ body {
         border-radius: 100px;
     } */
 
+    .work_title > img {
+        width: 50%;
+        align-self: center;
+    }
+    
+    .project_img > .img_container > img {
+        width: 50%;
+    }
 
 
 }
