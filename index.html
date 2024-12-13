@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript">
+        var elm=document.getElementsByTagName("html")[0];
+        elm.style.display="none";
+        document.addEventListener("DOMContentLoaded",function(event) { elm.style.display="block"; });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>brady ancell</title>
     <link rel="stylesheet" href="static/styles/style.css">
-    <script src="static/scripts/script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="static/images/bancell-favicon.png">
 </head>
 <body>
     <div class="container">
+        <button onClick=darkModeToggle() id="dark-mode-toggle">
+            <img id="theme-img" src="static/images/dark-mode-icon.png">
+        </button>
         <div class="content">
             <div class="landing">
                 <div class="text">
@@ -25,7 +32,7 @@
                     <p class="description">
                         hello! i'm a computer science student at the colorado school of mines. currently, i'm completing my undergraduate degree in computer science with a minor in computational and applied mathematics. i'm passionate about coding, problem-solving, and innovative technology.
                         <br><br>
-                        i have a lot of experience in web development and love to combine my knack for aesthetics with technical programming. i enjoy creating things whether its a simple script to automate an annoying task, or a more complicated website with a unique ui.
+                        i have a lot of experience in web development and love to combine my knack for aesthetics with technical programming. i enjoy creating things whether its a simple script to automate an monotonous task, or a more complicated website with a unique ui.
                         <br><br>
                         i'm constantly exploring new technologies and methods to enhance my skill set. no matter the size of the project, i approach every program with a focus on quality, innovation, and user experience.
                         <br><br>
@@ -41,7 +48,7 @@
                             <img src="static/images/linkedin-logo.png" alt="linkedin logo">
                         </a>&nbsp;&nbsp;&nbsp;&nbsp;
                         <a id="no-underline" href="https://github.com/bancell04" target="_blank">
-                            <img src="static/images/github-logo.png" alt="github logo">
+                            <img id="github-logo" src="static/images/github-logo.png" alt="github logo">
                         </a>
                     </div>
                 </div>
@@ -52,5 +59,6 @@
             </div>
         </div>
     </div>
+    <script src="static/scripts/script.js" defer></script>
 </body>
 </html>

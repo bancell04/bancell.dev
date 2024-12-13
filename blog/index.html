@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript">
+        var elm=document.getElementsByTagName("html")[0];
+        elm.style.display="none";
+        document.addEventListener("DOMContentLoaded",function(event) { elm.style.display="block"; });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,22 +16,12 @@
 </head>
     <body>
         <div class="container">
+            <button onClick=darkModeToggle() id="dark-mode-toggle">
+                <img id="theme-img" src="../static/images/dark-mode-icon.png">
+            </button>
             <div class="content">
                 <div class="landing">
                     <div class="blog_page">
-                        <div class="links">
-                            <a href="/">home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="../work/index.html">work</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="../projects/index.html">projects</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="index.html">blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a id="no-underline" href="https://www.linkedin.com/in/brady-ancell/" target="_blank">
-                                <img src="../static/images/linkedin-logo.png" alt="linkedin logo">
-                            </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a id="no-underline" href="https://github.com/bancell04" target="_blank">
-                                <img src="../static/images/github-logo.png" alt="github logo">
-                            </a>
-                        </div>
-                        <br>
                         <div class="name">
                             <h1>blog</h1>
                             <img id="cursor" src="../static/images/cursor.jpg" alt="cursor image">
@@ -64,8 +59,19 @@
                             </div>
                         </div>
                         <hr id="project_separator"> -->
+                        <div class="links">
+                            <a href="/">home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../work/index.html">work</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../projects/index.html">projects</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="index.html">blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a id="no-underline" href="https://www.linkedin.com/in/brady-ancell/" target="_blank">
+                                <img src="../static/images/linkedin-logo.png" alt="linkedin logo">
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a id="no-underline" href="https://github.com/bancell04" target="_blank">
+                                <img id="github-logo" src="../static/images/github-logo.png" alt="github logo">
+                            </a>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>

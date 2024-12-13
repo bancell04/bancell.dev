@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script type="text/javascript">
+            var elm=document.getElementsByTagName("html")[0];
+            elm.style.display="none";
+            document.addEventListener("DOMContentLoaded",function(event) { elm.style.display="block"; });
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -8,25 +13,87 @@
         <link rel="stylesheet" href="../static/styles/style.css">
         <script src="../static/scripts/script.js" defer></script>
         <link rel="icon" type="image/x-icon" href="../static/images/bancell-favicon.png">
+        <script>
+            if (localStorage.getItem('dark-mode') === 'enabled') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        </script>
+        <style>
+            body {
+                font-family: SourceCodePro, monospace;
+                margin: 0;
+                padding: 0;
+                background-color: #f7f7f7;
+                min-height: 100vh;
+                overflow: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            #dark-mode-toggle {
+                position: fixed; 
+                display: flex;
+                margin: auto;
+                top: 10px; 
+                right: 10px; 
+                z-index: 1000;
+                border: none;
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                background-color:rgb(43, 43, 43)
+            }
+    
+            body.dark-mode #dark-mode-toggle {
+                position: fixed; 
+                display: flex;
+                margin: auto;
+                top: 10px; 
+                right: 10px; 
+                z-index: 1000;
+                border: none;
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                background-color:rgb(209, 209, 209)
+            }
+    
+            body {
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+    
+            .landing {
+                transition: background-color 0.3s ease;
+            }
+    
+            #dark-mode-toggle img {
+                width: 100%;
+                margin: auto;
+            }
+    
+            body.dark-mode {
+                font-family: SourceCodePro, monospace;
+                margin: 0;
+                padding: 0;
+                background-color: #202020;
+                color: white;
+                min-height: 100vh;
+                overflow: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
+            <button onClick=darkModeToggle() id="dark-mode-toggle">
+                <img id="theme-img" src="../static/images/dark-mode-icon.png">
+            </button>
             <div class="content">
                 <div class="landing">
                     <div class="project_page">
-                        <div class="links">
-                            <a href="/">home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="../work/index.html">work</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="index.html">projects</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="../blog/index.html">blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a id="no-underline" href="https://www.linkedin.com/in/brady-ancell/" target="_blank">
-                                <img src="../static/images/linkedin-logo.png" alt="linkedin logo">
-                            </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a id="no-underline" href="https://github.com/bancell04" target="_blank">
-                                <img src="../static/images/github-logo.png" alt="github logo">
-                            </a>
-                        </div>
-                        <br>
                         <!-- <hr id="project_separator"> -->
                         <div class="name">
                             <h1>projects</h1>
@@ -106,7 +173,18 @@
 
                         <hr id="project_separator">
 
-                        <br><br>
+                        <div class="links">
+                            <a href="/">home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../work/index.html">work</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="index.html">projects</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="../blog/index.html">blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a id="no-underline" href="https://www.linkedin.com/in/brady-ancell/" target="_blank">
+                                <img src="../static/images/linkedin-logo.png" alt="linkedin logo">
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a id="no-underline" href="https://github.com/bancell04" target="_blank">
+                                <img id="github-logo" src="../static/images/github-logo.png" alt="github logo">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
