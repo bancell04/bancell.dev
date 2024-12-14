@@ -45,16 +45,33 @@ function checkDarkModePreference() {
     }
 }
 
+function checkMobile() {
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        const mobileHeadshot = document.getElementById("mobile-headshot");
+        const headshot = document.getElementById("headshot");
+        if (window.innerWidth <= 600) {
+            console.log("mobile!");
+            mobileHeadshot.style.display = "block";
+            headshot.style.display = "none";
+        } else {
+            console.log("not mobile!");
+            mobileHeadshot.style.display = "none";
+            headshot.style.display = "block";
+        }
+    } else {
+        return;
+    }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     toggleCursor();
     checkDarkModePreference();
     updateDarkModeElements();
+    checkMobile();
 });
+
+window.addEventListener('resize', () => {
+    checkMobile();
+});
+
 const body = document.body;
-
-// function mobileHeadshot() {
-//     if (window.)
-// }
-
-// mobileHeadshot() 

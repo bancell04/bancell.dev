@@ -499,4 +499,8 @@ body.dark-mode .landing {
         width: 50%;
     }
 
+    #mobile-headshot {
+        padding-top: 10px;
+    }
+
 }
