@@ -396,6 +396,35 @@ body.dark-mode .landing {
         max-width: 50%;
         margin: auto;
     }
+
+    .projects-icon {
+        width: 16px;
+        height: 16px;
+        padding-right: 10px;
+    }
+
+    .projects-btn {
+        display: inline-flex;
+        flex-direction: row;
+        padding: 4px;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgb(232, 232, 232);
+        width: auto;
+        text-decoration: none;
+        color: black;
+    }
+
+    .projects-btn:hover {
+        display: inline-flex;
+        flex-direction: row;
+        padding: 4px;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgb(211, 211, 211);
+        width: auto;
+    }
+
 }
 
 
@@ -501,6 +530,34 @@ body.dark-mode .landing {
 
     #mobile-headshot {
         padding-top: 10px;
+    }
+
+    .projects-icon {
+        width: 16px;
+        height: 16px;
+        padding-right: 10px;
+    }
+
+    .projects-btn {
+        display: inline-flex;
+        flex-direction: row;
+        padding: 4px;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgb(232, 232, 232);
+        width: auto;
+        text-decoration: none;
+        color: black;
+    }
+
+    .projects-btn:hover {
+        display: inline-flex;
+        flex-direction: row;
+        padding: 4px;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgb(211, 211, 211);
+        width: auto;
     }
 
 }
