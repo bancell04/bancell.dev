@@ -21,6 +21,7 @@ function updateDarkModeElements() {
     const buttonImg = document.getElementById("theme-img");
     const githubImg = document.getElementById("github-logo");
     const cursorImg = document.getElementById("cursor");
+    const downloadImg = document.getElementById("download-img");
     const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
     const pathPrefix = isHomePage ? "static/images/" : "../static/images/";
 
@@ -28,11 +29,13 @@ function updateDarkModeElements() {
         buttonImg.setAttribute("src", pathPrefix + "light-mode-icon.png");
         githubImg.setAttribute("src", pathPrefix + "github-white.png");
         cursorImg.setAttribute("src", pathPrefix + "cursor-white.jpg");
+        downloadImg.setAttribute("src", pathPrefix + "download-dark.png");
         localStorage.setItem('dark-mode', 'enabled');
     } else {
         buttonImg.setAttribute("src", pathPrefix + "dark-mode-icon.png");
         githubImg.setAttribute("src", pathPrefix + "github-logo.png");
         cursorImg.setAttribute("src", pathPrefix + "cursor.jpg");
+        downloadImg.setAttribute("src", pathPrefix + "download-white.png");
         localStorage.setItem('dark-mode', 'disabled');
     }
 }
@@ -61,6 +64,22 @@ function checkMobile() {
     } else {
         return;
     }
+}
+
+function downloadResume() {
+    const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+    const pathPrefix = isHomePage ? "static/docs/" : "../static/docs/";
+
+    const filePath = pathPrefix + "brady_ancell_resume.pdf";
+
+    const link = document.createElement("a");
+    link.href = filePath;
+    link.download = "brady_ancell_resume.pdf";
+
+    // Append, click, and remove
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

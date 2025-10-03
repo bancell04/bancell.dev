@@ -15,7 +15,11 @@
     </head>
     <body>
         <div class="container">
-            <button onClick=darkModeToggle() id="dark-mode-toggle">
+            <button id="resume-button" onclick="downloadResume()">
+                Resume
+                <img id="download-img" src="../static/images/download-white.png">
+            </button>
+            <button onclick=darkModeToggle() id="dark-mode-toggle">
                 <img id="theme-img" src="../static/images/dark-mode-icon.png">
             </button>
             <div class="content">
@@ -33,9 +37,6 @@
                         <div class="project">
                             <div class="project_desc">
                                 <p class="subtitle">guardian.ai - blasterhacks2025 winner </p>
-
-                                
-                                
                                 <p class="date">mar 2025</p>
                                 <p class="description">
                                     guardian.ai is a emergency notification assistant that automatically notifies users of emergencies in their area and creates personalized action/evacuation plans. <br>

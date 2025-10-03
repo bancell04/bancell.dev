@@ -29,6 +29,47 @@ body {
     background-color:rgb(43, 43, 43)
 }
 
+#resume-button {
+    position: fixed; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    margin: auto;
+    top: 10px; 
+    left: 10px; 
+    z-index: 1000;
+    border: none;
+    width: 110px;
+    height: 50px;
+    border-radius: 25px;
+    background-color:rgb(43, 43, 43)
+}
+
+#download-img {
+  max-width: 24px; 
+  max-height: 24px;  
+  padding-left: 4px;
+  height: auto;     
+  display: block;  
+}
+
+body.dark-mode #resume-button {
+    color: rgb(43, 43, 43);
+    background-color:rgb(209, 209, 209)
+}
+
+#download-img {
+  max-width: 24px; 
+  max-height: 24px;  
+  padding-left: 4px;
+  height: auto;     
+  display: block;  
+}
+
 body.dark-mode #dark-mode-toggle {
     position: fixed; 
     display: flex;
